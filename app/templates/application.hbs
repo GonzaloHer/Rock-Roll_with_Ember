@@ -1,14 +1,18 @@
 {{page-title "Rock & Roll with Octane"}}
 
-<div class="bg-blue-900 text-white p-8 h-screen font-sans">
+<div class="bg-blue-900 text-white p-8 h-screen">
   <div class="mx-auto mb-4">
     <div class="h-12 flex items-center mb-4 border-b-2">
       <a href="#">
-        <h1 class="font-bold text-2x1 text-white font-sans">
+        <h1 class="font-bold text-2x1 text-white">
           Rock & Roll <span class="font-normal">with Octane</span>
         </h1>
       </a>
     </div>
+    <nav class="h-8 flex items-center mb-8 ">
+      <LinkTo class="hover:text-gray-500" @route="bands">Bands</LinkTo>
+      <LinkTo class="hover:text-gray-500 ml-4" @route="songs">Songs</LinkTo>
+    </nav>
     {{outlet}}
   </div>
 </div>
